@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuvam | Software Developer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,22 +13,44 @@
     <div class="static-bg">
         <img src="images/bg.jpg">
     </div>
-    
-    <!-- Main Glass Navigation Panel -->
-    <div class="glass-nav-container">
-        <nav class="glass-nav">
-            <ul>
-                <li><a href="#home" class="active" data-content="home">Home</a></li>
-                <li><a href="#project" data-content="project">Experiences</a></li>
-                <li><a href="#project" data-content="project">Skills</a></li>
-                <li><a href="#resume" data-content="resume">Resume</a></li>
-                <li><a href="#hire" class="hire-nav" data-content="hire">Contact Me</a></li>
+
+    <div class="content-panel home-content">
+        <!-- Vertical Navigation Panel -->
+        <nav class="vertical-glass-nav">
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="active" data-content="home">
+                        <i class="fas fa-home"></i>
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project" data-content="project">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="link-text">Experiences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" data-content="skills">
+                        <i class="fas fa-code"></i>
+                        <span class="link-text">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" data-content="resume">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="link-text">Resume</span>
+                    </a>
+                </li>
+                <li class="nav-footer">
+                    <a href="#hire" class="hire-nav" data-content="hire">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
             </ul>
         </nav>
-    </div>
 
-    <!-- Content Panels (Initially hidden) -->
-    <div class="content-panel home-content">
         <div class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
@@ -45,35 +67,17 @@
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://x.com/shuvam_baksi" target="_blank" rel="noopener noreferrer" class="social-icon">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-x-twitter"></i>
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/developer.png" alt="Designer Illustration" class="animated-designer">
+                    <img src="images/developer.png" alt="Designer Illustration" class="animated-designer default-image">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="content-panel project-content">
-        <!-- Project content would go here -->
-        <h2>My Projects</h2>
-        <p>Project showcase content...</p>
-    </div>
-
-    <div class="content-panel resume-content">
-        <!-- Resume content would go here -->
-        <h2>My Resume</h2>
-        <p>Resume content...</p>
-    </div>
-
-    <div class="content-panel hire-content">
-        <!-- Hire content would go here -->
-        <h2>Hire Me</h2>
-        <p>Contact information...</p>
-    </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
